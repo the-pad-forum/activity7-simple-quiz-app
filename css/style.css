@@ -57,14 +57,23 @@ div {
   margin: .5rem auto;
 }
 
-#progress { height: 48px; padding: 8px; }
-#next-question { margin-top: 3rem; }
-#question { height: 50px; }
+#progress { 
+  height: 48px; 
+  padding: 8px; 
+}
+
+#next-question { 
+  border-radius: 1.8rem;
+  padding: .8rem 2rem;
+  margin-top: 3rem; 
+}
+
+#question { 
+  font-size: 1.35rem;
+  height: 80px; 
+}
+
 #options { 
-  /* border-radius: 1rem; */
-  /* display: flex; */
-  /* align-items: center;  */
-  /* justify-content: center; */
   height: 125px;
 }
 
@@ -176,6 +185,6 @@ div {
 
 #resultsChart {
   position: absolute;
-  top: 15.5rem;
+  top: 14.8rem;
   left: calc(600px -100vw);
 }
