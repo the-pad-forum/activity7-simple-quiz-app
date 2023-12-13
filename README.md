@@ -31,9 +31,9 @@ In this section, your goal is to set up the Simple Quiz App on your local machin
 - Go through the project from its GitHub page.
 - Review the code to understand the structure and functionalities.
 - Replicate the project's directory structure on your local machine and populate it with the appropriate codebase. This step involves creating a similar file and folder layout and then copying the necessary code into your local version.
-- Test the app in your local environment.
-- Compare with the deployed version on [Vercel](https://activity7-simple-quiz-app.vercel.app/)
-.
+- Regularly commit your code changes incrementally to your online repository.
+- Ensure to test the application both in your local environment and on your Vercel deployment.
+- Compare with the deployed version on [Vercel](https://activity7-simple-quiz-app.vercel.app/).
 
 ### Section 2: JavaScript Challenge (Marks: 25%)
 Enhance and optimize the JavaScript codebase.
