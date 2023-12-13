@@ -2,7 +2,8 @@
 
 ![Vercel Deploy](https://therealsujitk-vercel-badge.vercel.app/?app=activity7-simple-quiz-app)
 
-**Deadline for Completion:** Wednesday, 20th December 2023
+**Deadline for Completion:** Wednesday, 20th December 2023  
+**Live Preview:** https://activity7-simple-quiz-app.vercel.app
 
 ## Introduction
 The Simple Quiz App project is an essential exercise designed to enhance your skills in web development, focusing majorly on JavaScript, and a little bit of HTML and CSS. This activity aims to give you practical experience in constructing a web application, understanding its framework, and implementing key features.
