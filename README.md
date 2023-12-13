@@ -6,7 +6,7 @@
 **Live Preview:** https://activity7-simple-quiz-app.vercel.app
 
 ## Introduction
-The Simple Quiz App project is an essential exercise designed to enhance your skills in web development, focusing majorly on JavaScript, and a little bit of HTML and CSS. This activity aims to give you practical experience in constructing a web application, understanding its framework, and implementing key features.
+The Simple Quiz App project is an essential exercise designed to enhance your skills in web development, focusing majorly on JavaScript, and a little bit on HTML and CSS. This activity aims to give you practical experience in constructing a web application, understanding its framework, and implementing key features.
 
 ![Mockup](/img/current-ui.png)  
 
