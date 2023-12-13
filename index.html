@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Simple Quiz App</title>
+</head>
+<body>
+  <div id="quiz-container">
+    <h1 >Simple Quiz App</h1>
+    <button class="btn btn-primary" id="quiz-start-btn">Start Quiz</button>
+    <p id="quiz-start-text">
+      <b>Time</b>: 5 Minutes,
+      <b>Category</b>: Current Affairs<br /><br/>
+      Click the "Start Quiz" button to begin. Once you've completed it, you'll see your results, along with options to either retake the quiz or download your results as a PDF report.</p>
+
+    <div id="quiz-content">
+      <div id="quiz-timer"></div>
+      <div id="progress"></div>
+
+      <div id="question"></div>
+      <div id="options"></div>
+      
+      <button id="next-question" class="btn btn-success btn-lg">
+        Next <i class="fas fa-angle-double-right"></i>
+      </button>
+
+    </div>
+  </div>
+  <div class="footer">
+    © 2023 Your Email Address. All rights reserved
+  </div>
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

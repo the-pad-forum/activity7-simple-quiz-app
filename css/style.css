@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  height: 100%;
+}
+
+div {
+  margin: 8px 0;
+}
+
+#options button {
+  margin-right: 8px;
+}
+
+#quiz-container {
+  zoom: 1;
+  width: 80%;
+  max-width: 600px;
+  min-height: 457.6px;
+  padding: 2rem;
+  text-align: center;
+  margin: 3rem auto;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#quiz-content {
+  display: none;
+}
+
+#quiz-start-btn {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+}
+
+#quiz-start-text {
+  font-size: 1rem;
+  color: #333;
+  padding: 1.5rem 2rem;
+}
+
+#quiz-timer {
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #eee;
+  border-radius: 4px;
+  padding: 10px;
+  width: 60px;
+  height: 40px;
+  margin: .5rem auto;
+}
+
+#progress { height: 48px; padding: 8px; }
+#next-question { margin-top: 3rem; }
+#question { height: 50px; }
+#options { height: 80px; }
+
+#options button {
+  position: relative;
+}
+
+.selected-answer, .selected-answer:active, .selected-answer:hover {
+  background-color: #0bdcf7;
+  border: 1px solid #0bdcf7;
+  color: #000;
+}
+
+.tooltip {
+  visibility: hidden;
+  width: auto;
+  font-size: 1rem;
+  background-color: #eee;
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-bottom: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.show-tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#retry-quiz {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 15px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px; 
+    cursor: pointer; 
+    border: none;
+    border-radius: 4px; 
+    transition-duration: 0.4s; 
+}
+
+#retry-quiz:hover {
+    background-color: #45a049; 
+}
+
+#download-pdf {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+}
+
+#download-pdf:hover {
+    background-color: #d32f2f;
+}
