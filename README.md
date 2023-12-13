@@ -8,6 +8,8 @@
 ## Introduction
 The Simple Quiz App project is an essential exercise designed to enhance your skills in web development, focusing majorly on JavaScript, and a little bit of HTML and CSS. This activity aims to give you practical experience in constructing a web application, understanding its framework, and implementing key features.
 
+![Mockup](/img/current-ui.png)  
+
 ### Section 1: Implementation and Setup (Marks: 50%)
 In this section, your goal is to set up the Simple Quiz App on your local machine, understand its features, and compare it with the deployed version.
 
