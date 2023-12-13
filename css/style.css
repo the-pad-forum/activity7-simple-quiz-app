@@ -60,7 +60,13 @@ div {
 #progress { height: 48px; padding: 8px; }
 #next-question { margin-top: 3rem; }
 #question { height: 50px; }
-#options { height: 80px; }
+#options { 
+  /* border-radius: 1rem; */
+  /* display: flex; */
+  /* align-items: center;  */
+  /* justify-content: center; */
+  height: 125px;
+}
 
 #options button {
   position: relative;
@@ -102,7 +108,32 @@ div {
   text-align: center;
 }
 
+.question-review {
+  margin-top: 3rem;
+  padding: 0 1rem;
+  text-align: left;
+}
+
+.review-container {
+  margin-top: 44rem;
+}
+
+.review-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.feedback {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  padding: 0 3.5rem;
+}
+
 #retry-quiz {
+  position: absolute;
+  top: 11rem; 
+  left: calc(50% - 190px);
     background-color: #4CAF50; 
     color: white;
     padding: 15px 32px; 
@@ -122,6 +153,9 @@ div {
 }
 
 #download-pdf {
+  position: absolute;
+  top: 11rem;
+  left: calc(50% - 40px);
     background-color: #f44336;
     color: white;
     padding: 15px 32px;
@@ -138,4 +172,10 @@ div {
 
 #download-pdf:hover {
     background-color: #d32f2f;
+}
+
+#resultsChart {
+  position: absolute;
+  top: 15.5rem;
+  left: calc(600px -100vw);
 }

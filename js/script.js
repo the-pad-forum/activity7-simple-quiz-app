@@ -98,7 +98,6 @@ function formatTime(time) {
  * -----------------------------------------------------------------------------
  */
 function finishQuiz() {
-
   clearInterval(quizTimerInterval);
 
   const endTime = new Date();
@@ -121,7 +120,23 @@ function finishQuiz() {
       Final Score: ${finalScore}/${questions.length} 
       (${scorePercentage.toFixed(2)}%)
     </p>
+    <div class="review-container">
+    <h3 class="review-title">Performance Review</h3>
   `;
+
+  // Generate personalized feedback
+  let feedback = '';
+
+  if (scorePercentage >= 80) {
+    feedback = 'Excellent work! Keep it up!';
+  } else if (scorePercentage >= 50) {
+    feedback = 'Good effort! Review the incorrect answers to improve further.';
+  } else {
+    feedback =
+      'Looks like you might need some more practice. \nTry reviewing the material and retaking the quiz.';
+  }
+
+  resultsHTML += `<p class="feedback">${feedback}</p>`;
 
   // Compile results for each question
   questions.forEach((question, index) => {
@@ -137,24 +152,6 @@ function finishQuiz() {
       </div>
     `;
   });
-
-  // Generate personalized feedback
-  let feedback = '';
-
-  if (scorePercentage >= 80) {
-    feedback = 'Excellent work! Keep it up!';
-  } else if (scorePercentage >= 50) {
-    feedback =
-      'Good effort! Review the incorrect answers to improve further.';
-  } else {
-    feedback =
-      'Looks like you might need some more practice. \nTry reviewing the material and retaking the quiz.';
-  }
-
-  resultsHTML += `<p>Time Taken: ${minutes} minutes and ${seconds} seconds</p>`;
-  resultsHTML += `<p>Correct Answers: ${correctAnswersCount}</p>`;
-  resultsHTML += `<p>Incorrect Answers: ${incorrectAnswersCount}</p>`;
-  resultsHTML += `<p>${feedback}</p>`;
 
   resultsHTML += `<button id='retry-quiz' onclick='location.reload();'>
                     Retry Quiz
@@ -174,7 +171,7 @@ function finishQuiz() {
   const incorrectAnswers = questions.length - correctAnswers;
 
   // Create a canvas element for the chart
-  resultsHTML += `<canvas id="resultsChart" width="400" height="400"></canvas>`;
+  resultsHTML += `<canvas id="resultsChart" width="400" height="400"></canvas></div>`;
 
   document.getElementById('quiz-container').innerHTML = resultsHTML;
 
@@ -390,14 +387,6 @@ function generatePDF() {
    * Add graphical representation of results
    * ---------------------------------------
    */
-
-  // let canvas = document.getElementById('resultsChart');
-  // let chartImageUrl = canvas.toDataURL('image/png');
-
-  // doc.addImage(chartImageUrl, 'PNG', 120, 45, 75, 75); // Adjust position and size as needed
-
-  // doc.line(50, 20, 50, 80);
-
   const correctAnswers = calculateScore();
   const incorrectAnswers = questions.length - correctAnswers;
   yPos += 10; // Adjusted yPos after adding questions
