@@ -46,7 +46,9 @@ Enhance and optimize the JavaScript codebase.
 ### Section 3: CSS Styling Challenge (Marks: 25%)
 Match the app's styling to a specific design.
 
-**Objective:**
+**Objectives:**
+- Change the colours of the visualization section of the PDF report to #008000b3 for correct answers, and #ff0000b3 for incorrect answers.
+- Append `Category: Current Affairs` as part of the subheading items to the PDF report. Set the x-axis position to `135`.
 - Style the app to resemble the design image provided below:
     
   ![Mockup](/img/example-ui.png)
